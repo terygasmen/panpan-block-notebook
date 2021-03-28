@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panpan | Block Notebook</title>
+    <!--PAGE ICON-->
+    <link rel="icon" href="../STYLE GUIDE/library/panpan logo 3.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Inter:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Inter:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
+    </style>
+</head>
+<body>
+    <!--SIDEBAR | OUTLINING AREA, HERO AREA-->
+    <div class="sidebar">
+        <!--OUTLINING AREA-->
+        <div class="outline_area">
+            <!--TITLE-->
+            <div class="title_cont">
+                <textarea class="title_input secondary_font_bold" placeholder="add a title" contenteditable="true"></textarea>
+            </div>
+            <!--DECKS-->
+            <div class="decks_cont">
+                <!--MAIN DECK-->
+                <ul id="mainDeck" class="list secondary_font_bold"></ul>
+                <label for="">
+                    <input type="text" id="mainDeckList" placeholder="add a deck" class="secondary_font main_deck" contenteditable="true">
+                    <span onclick="newElementMainDeck()" id="enter" class="addBtn secondary_font"></span>
+                </label>
+            </div>   
+        </div>
+        <!--HERO AREA-->
+        <div class="hero_area">
+            <!--LOGO AREA-->
+            <div class="title_page">
+                <p class="secondary_font logo_title">Panpan Block Notebook</p>
+            </div>
+            <!--DARK MODE OPTION-->
+            <div class="dark_mode">
+                <button class="dark_mode_font secondary_font_bold" onclick="darkMode()">DARK MODE</button>
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN | WRITING AREA, SETTINGS AREA-->
+    <main>
+        <!--WRITING AREA-->
+        <div class="typing_area_cont">
+            <textarea class="typing_area secondary_font" contenteditable="true" placeholder="warning: text disappears in five seconds of pause..."></textarea>
+        </div>
+        <!--FOOTER AREA-->
+        <div class="footer_area">
+            <!--OUTLINE ADDRESS-->
+            <div class="address"></div>
+            <!--SETTINGS-->
+            <div class="settings">
+                <button class="save secondary_font_bold">SAVE</button>
+                <button class="copy secondary_font_bold">COPY</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
