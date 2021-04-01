@@ -27,8 +27,11 @@
     text-align: end;
 }
 
-.sidebar {
-    height: 100%;
+
+/* CONTAINERS */
+
+.sidebar_cont {
+    height: 85%;
     width: 20vw;
     position: fixed;
     z-index: 1;
@@ -36,8 +39,19 @@
     left: 0;
     background-color: #BEBBD4;
     overflow-x: hidden;
-    padding: 30px 30px 30px 30px;
-    
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
 }
 
 .outline_area {
@@ -46,21 +60,25 @@
 
 .title_input {
     background: #BEBBD4;
-    font-size: 30px;
+    font-size: 25px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 93%;
-    height: auto;
+    height: 30px;
+    min-height: 30px;
+    max-height: 100px;
     margin-bottom: 30px;
     padding: 5px 5px 5px 10px;
     color: #FFFFFF;
     outline: none;
+    overflow: hidden;
     overflow-wrap: break-word;
-    resize: none;
+    resize: vertical;
+    margin-top: 0;
 }
 
 .title_input:hover {
-    background:  rgba(255, 255, 255, 0.15);
+    background: rgb(255, 255, 255, 0.3);
 }
 
 /* Remove margins and padding from the list */
@@ -87,10 +105,10 @@
     padding: 5px 5px 5px 10px;
     margin-bottom: 4px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 15px;
     outline: none;
     overflow: hidden;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 /* Style the close button */
@@ -113,20 +131,21 @@
     padding: 5px 5px 5px 10px;
     margin-bottom: 4px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 15px;
     outline: none;
+    font-weight: 600;
 }
 
 .subdeck {
     border: 0;
     border-radius: 5px;
     height: auto;
-    width: 93%;
+    width: 85%;
     background: rgb(255, 255, 255, 0.2);
     padding: 5px 5px 5px 10px;
     margin-bottom: 4px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 15px;
     outline: none;
 }
 
@@ -147,39 +166,18 @@ input:hover {
     background: rgb(255, 255, 255, 0.3);
 }
 
-.hero_area {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    padding: 30px 0 30px 0;
-    column-gap: 5px;
-    position: fixed;
-    bottom: 0;
-}
-
-.hero_area button {
-    background: none;
-    outline: none;
-    border: 0;
-    width: 100%;
-    padding: 0;
-}
-
-.hero_area button:hover {
-    cursor: pointer;
-}
-
 main {
     margin-left: 25vw;
     padding: 0px 10px;
 }
 
 .typing_area_cont {
-    padding: 25px;
+    padding: 30px;
 }
 
 .typing_area {
     width: 100%;
-    height: 680px;
+    height: 720px;
     resize: none;
     outline: none;
     border: none;
@@ -191,7 +189,7 @@ main {
 }
 .typing_area:hover {
     background-color:#f7f7f7;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .footer_area button {
