@@ -8,6 +8,7 @@
     <!--PAGE ICON-->
     <link rel="icon" href="../STYLE GUIDE/library/panpan logo 3.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Inter:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Inter:wght@600&display=swap');
@@ -36,6 +37,22 @@
                 </div>   
             </div>
         </div>
+        <div class="on_hover_nav">
+            <div>
+                <a class="on_hover_nav_item collapsible" href="">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="on_hover_nav_item" href="">
+                    <i class="fa fa-expand fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="on_hover_nav_item" href="">
+                    <i class="fa fa-adjust fa-2x" aria-hidden="true"></i>
+                </a>
+                <!-- <a class="on_hover_nav_item" href="">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a> -->
+            </div>
+        </div>
     </div>
 
     <!--MAIN | WRITING AREA, SETTINGS AREA-->
@@ -44,13 +61,9 @@
         <div class="typing_area_cont">
             <textarea id="user_txt" class="typing_area secondary_font" contenteditable="true" placeholder="WARNING: text disappears in five seconds of pause..."></textarea>
         </div>
-        <!--FOOTER AREA-->
-        <div class="footer_area">
-            <!--OUTLINE ADDRESS-->
-            <div class="address"></div>
-        </div>
     </main>
     <script src="outline.js"></script>
     <script src="textfield.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
