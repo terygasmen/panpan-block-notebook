@@ -18,8 +18,9 @@
 </head>
 <body>
     <!--SIDEBAR | OUTLINING AREA, HERO AREA-->
-    <div class="sidebar">
+    <div id="mySidebar" class="sidebar">
         <div class="sidebar_cont">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
             <!--OUTLINING AREA-->
             <div class="outline_area">
                 <!--TITLE-->
@@ -37,29 +38,18 @@
                 </div>   
             </div>
         </div>
-        <div class="on_hover_nav">
-            <div>
-                <a class="on_hover_nav_item collapsible" href="">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                </a>
-                <a class="on_hover_nav_item" href="">
-                    <i class="fa fa-expand fa-2x" aria-hidden="true"></i>
-                </a>
-                <a class="on_hover_nav_item" href="">
-                    <i class="fa fa-adjust fa-2x" aria-hidden="true"></i>
-                </a>
-                <!-- <a class="on_hover_nav_item" href="">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                </a> -->
-            </div>
-        </div>
     </div>
 
     <!--MAIN | WRITING AREA, SETTINGS AREA-->
-    <main>
+    <main id="main">
+        <div class="on_hover_nav">
+            <button class="on_hover_nav_item open__sidebar" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+            <button class="on_hover_nav_item"><i class="fa fa-expand fa-2x" aria-hidden="true"></i></button>
+            <button class="on_hover_nav_item"><i class="fa fa-adjust fa-2x" aria-hidden="true"></i></button>
+        </div>
         <!--WRITING AREA-->
         <div class="typing_area_cont">
-            <textarea id="user_txt" class="typing_area secondary_font" contenteditable="true" placeholder="WARNING: text disappears in five seconds of pause..."></textarea>
+            <textarea id="user_txt" class="typing_area secondary_font" placeholder="WARNING: text disappears in five seconds of pause..."></textarea>
         </div>
     </main>
     <script src="outline.js"></script>
