@@ -41,7 +41,7 @@ body {
 .closebtn {
     position: absolute;
     top: 35px;
-    right: 40px;
+    right: 10px;
     font-size: 30px;
     margin-left: 50px;
     background: none;
