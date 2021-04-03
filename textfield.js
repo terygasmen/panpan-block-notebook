@@ -16,8 +16,8 @@
 // });
 
 
-var fade_out = function() {
-    document.getElementById("user_txt").fadeOut(300).innerHTML = '';
-}
+// var fade_out = function() {
+//     document.getElementById("user_txt").fadeOut(300).innerHTML = '';
+// }
   
-setTimeout(fade_out, 5000);
+// setTimeout(fade_out, 5000);
