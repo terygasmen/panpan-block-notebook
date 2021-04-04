@@ -11,11 +11,23 @@ function closeNav() {
 }
 
 function fullscreen() {
-  var fullscreen = document.getElementsByClassName('typing_area_cont');
-  if (fullscreen)
-    var fullscreen = document.getElementsByClassName('typing_area_cont');
-    fullscreen.className = 'fullscreen__enabled';
+  if( $( ".typing_area_cont" ).hasClass( "fullscreen__enabled" )) {
+    $( ".typing_area_cont" ).removeClass( "fullscreen__enabled" );
+    writearea.removeChild(fullscreen_btn);
+  } else {
+    $( ".typing_area_cont" ).addClass( "fullscreen__enabled" );
+    writearea.appendChild(fullscreen_btn);
+  }
 }
+
+// escape key escapes fullscreen mode
+var minimize = document.getElementById("fullScreen");
+fullScreen.addEventListener("keyup", function(event) {
+    if (event.keyCode === 27) {
+    event.preventDefault();
+    document.getElementById("fullScreen").click();
+    }
+});
 
 function darkmode() {
   if( $( "body" ).hasClass( "darkmode__enabled" )) {
@@ -28,8 +40,6 @@ function darkmode() {
     $( ".subdeck" ).removeClass( "darkmode__enabled__two" );
     $( ".list" ).removeClass( "darkmode__enabled__two" );
     $( ".title_input" ).removeClass( "darkmode__enabled__two" );
-
-  
   } else {
     $( "body" ).addClass( "darkmode__enabled" );
     $( ".sidebar_cont" ).addClass( "darkmode__enabled__two" );
