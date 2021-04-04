@@ -44,11 +44,11 @@
     <main id="main">
         <div class="on_hover_nav">
             <button class="on_hover_nav_item darkmode open__sidebar" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
-            <button id='fullScreen' class="on_hover_nav_item darkmode" onclick="fullscreen()"><i class="fa fa-expand fa-2x" aria-hidden="true"></i></button>
+            <button id='fullScreen' class="on_hover_nav_item darkmode" onclick="openFullscreen()"><i class="fa fa-expand fa-2x" aria-hidden="true"></i></button>
             <button class="on_hover_nav_item darkmode darkmode__btn" onclick="darkmode()"><i class="fa fa-adjust fa-2x" aria-hidden="true"></i></button>
         </div>
         <!--WRITING AREA-->
-        <div class="typing_area_cont">
+        <div id="fullScreen_mode" class="typing_area_cont">
             <textarea id="user_txt" class="typing_area secondary_font" placeholder="WARNING: text disappears in five seconds of pause..."></textarea>
         </div>
     </main>

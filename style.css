@@ -194,8 +194,8 @@ main {
     right: 0;
     margin: 30px 0;
     display: flex;
-    width: 89%;
-    height: 88%;
+    width: 100%;
+    height: 85%;
     position: sticky;
 }
 
@@ -206,7 +206,7 @@ main {
     outline: none;
     border: none;
     right: 0;
-    padding: 30px 100px;
+    padding: 30px 200px;
     line-height: 22px;
     text-align: justify;
     display: inline-block;
@@ -226,6 +226,7 @@ main {
     top: 0;
     left: 0;
     margin: 30px 0;
+    z-index: 1;
 }
 
 .on_hover_nav_item {
@@ -248,25 +249,6 @@ main {
 
 i {
     color: #FFFFFF;
-}
-
-
-.fullscreen__enabled {
-    object-fit: contain;
-    position: fixed !important;
-    top: 0px !important;
-    right: 0px !important;
-    bottom: 0px !important;
-    left: 0px !important;
-    box-sizing: border-box !important;
-    min-width: 0px !important;
-    max-width: none !important;
-    min-height: 0px !important;
-    max-height: none !important;
-    width: 100% !important;
-    height: 100% !important;
-    transform: none !important;
-    margin: 0px !important;
 }
 
 .darkmode {

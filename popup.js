@@ -10,24 +10,25 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
-function fullscreen() {
-  if( $( ".typing_area_cont" ).hasClass( "fullscreen__enabled" )) {
-    $( ".typing_area_cont" ).removeClass( "fullscreen__enabled" );
-    writearea.removeChild(fullscreen_btn);
-  } else {
-    $( ".typing_area_cont" ).addClass( "fullscreen__enabled" );
-    writearea.appendChild(fullscreen_btn);
+
+/* FULLSCREEN MODE */
+var elem = document.getElementById("user_txt");
+
+/* When the openFullscreen() function is executed, open the video in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
   }
 }
 
-// escape key escapes fullscreen mode
-var minimize = document.getElementById("fullScreen");
-fullScreen.addEventListener("keyup", function(event) {
-    if (event.keyCode === 27) {
-    event.preventDefault();
-    document.getElementById("fullScreen").click();
-    }
-});
+
+
+
 
 function darkmode() {
   if( $( "body" ).hasClass( "darkmode__enabled" )) {
