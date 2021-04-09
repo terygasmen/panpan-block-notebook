@@ -181,11 +181,6 @@ main {
     display: flex;
 }
 
-.minimize {
-    transform: translateX(50px);
-    color: #323232;
-}
-
 .typing_area_cont {
     transition: .5s;
     transform: translateX(50px);
@@ -211,7 +206,6 @@ main {
     text-align: justify;
     display: inline-block;
     font-size: 16px;
-    color: #4F4D5D;
 }
 .typing_area::placeholder {
     color: #BEBBD4;
@@ -238,8 +232,8 @@ main {
     padding: 10px;
     font-size: 10px;
     border: 0;
-    height: 2.9vw;
-    width: 2.9vw;
+    height: 40px;
+    width: 40px;
     outline: none;
 }
 
@@ -249,6 +243,7 @@ main {
 
 i {
     color: #FFFFFF;
+    font-size: 10px;
 }
 
 .darkmode {

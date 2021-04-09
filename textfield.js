@@ -5,7 +5,7 @@ document.getElementById('user_txt').onkeypress = function () {
 };
 
 function callServerScript() {
-    $('#user_txt').fadeOut(1000, function() {
+    $('#user_txt').fadeOut(1500, function() {
         $('#user_txt').val('');
     });
     $('#user_txt').fadeIn(0);

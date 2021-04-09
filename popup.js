@@ -26,10 +26,6 @@ function openFullscreen() {
   }
 }
 
-
-
-
-
 function darkmode() {
   if( $( "body" ).hasClass( "darkmode__enabled" )) {
     $( "body" ).removeClass( "darkmode__enabled" );
@@ -41,6 +37,7 @@ function darkmode() {
     $( ".subdeck" ).removeClass( "darkmode__enabled__two" );
     $( ".list" ).removeClass( "darkmode__enabled__two" );
     $( ".title_input" ).removeClass( "darkmode__enabled__two" );
+    $( ".typing_area" ).removeClass( "darkmode__enabled" );
   } else {
     $( "body" ).addClass( "darkmode__enabled" );
     $( ".sidebar_cont" ).addClass( "darkmode__enabled__two" );
@@ -51,6 +48,7 @@ function darkmode() {
     $( ".subdeck" ).addClass( "darkmode__enabled__two" );
     $( ".list" ).addClass( "darkmode__enabled__two" );
     $( ".title_input" ).addClass( "darkmode__enabled__two" );
+    $( ".typing_area" ).addClass( "darkmode__enabled" );
   }
 }
 
