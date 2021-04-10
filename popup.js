@@ -1,7 +1,7 @@
 /* Set the width of the sidebar to 28vw and the left margin of the page content to 25vw */
 function openNav() {
-  document.getElementById("mySidebar").style.width = "25vw";
-  document.getElementById("main").style.marginLeft = "25vw";
+  document.getElementById("mySidebar").style.width = "380px";
+  document.getElementById("main").style.marginLeft = "380px";
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
